@@ -1,0 +1,908 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #FFF8F0;
+
+}
+/*Navbar there is a header inside the it a nav with a class 
+(navbar) a div for img logo and a h2 so then a ul with class(nav-links) inside navigation bar or menu
+and lastly a link a with class (order-btn) for button   */
+.navbar
+{
+    width: 100%;
+    height:90px;
+    background: #1f120c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    position:fixed;
+    z-index: 1000;
+    
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo img
+{
+    width: 67px;
+}
+.logo h2
+{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.nav-links
+{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.nav-links a:hover
+{
+    color: #d4a373;
+}
+.order-btn
+{
+    text-decoration: none;
+    background-color: #a66a3f;
+    color:white;
+    border-radius: 8px;
+    transition: .3s;
+    padding: 10px;
+    font-size: 16px;
+}
+.order-btn:hover
+{
+    background: #8a5731;
+}
+
+/* it is the first section (hero) 
+here used only a h1 and  a p and a button link */
+
+.hero
+{
+   background-image: url(22img/bg1.png); 
+   background-position: ;
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 100%;
+   height: 70vh;
+   padding-top: 90px;
+   padding-left: 200px;
+   padding-top: 200px;
+}
+.hero h1
+{
+   font-size: 80px;
+   color: white;
+}
+
+.hero p
+{
+  color: white;
+  margin-bottom: 50px;
+  line-height: 3vh;
+  margin-top: 20px;
+  font-size: 23px;
+  word-spacing: 5px;
+}
+.btnn 
+{
+   font-size: 23px;
+   color: white;
+   border-radius: 7px;
+   padding: 14px;
+   background:#A66A3F ;
+    
+
+}
+
+.btnn:hover
+{
+  background: #bf8155;
+}
+
+.hero a 
+{
+   text-decoration: none; 
+  
+  
+}
+
+/*  icon-box  
+here is div class (cards)  
+and another div class (card) 
+inside the card are a img , h3 and p 
+so overall inside the cards there is 
+4 card */
+
+.icon-box
+{
+  background-color: antiquewhite;
+  
+}
+
+.cards
+{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    
+    
+}
+.card
+{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card h3 
+{
+   padding: 0;
+   
+}
+.card p
+{
+    padding: 0;
+    
+}
+.card img
+{
+    width: 30%;
+    opacity: 0.7;
+    transition: .10s;
+
+}
+.card img:hover
+{
+     transform: translateY(-10px);
+    
+}
+
+/* Main s
+section class (home-section) 
+ on the left side an img
+ and rigth side the text (h3 and p)
+ and a button class(home-btn) link */
+
+.main
+{
+    background-color: #FFF8F0;
+}
+.home-section
+{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 90px;
+}
+.home-section img
+{
+    width: 30%;
+    border-radius: 7px;
+
+}
+.home-section h3
+{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.home-section p
+{
+    font-size: 20px;
+    line-height: 4vh;
+   
+}
+.home-btn
+{
+    background-color: #bf8155;
+    padding:14px 20px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+.home-btn a
+{
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+}
+.home-btn:hover
+{
+    background: #d4a373;
+
+}
+
+/* section class popular-coffee
+ohhhhhhhhhhhhh god 
+soo in this section the main section is popular-coffee
+and inside  div class coffee
+inside img , h3, h4 
+so there is 4 div class coffee*/
+
+.popular-coffee
+{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+
+    
+    
+}
+
+.all
+{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.all h2
+{
+    font-size: 50px;
+    position: relative;
+     transition: 0.3s;
+}
+
+.all h2:hover
+{
+    color: #8a5731;
+}
+
+.all h2:hover::after 
+{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background:#8a5731;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.coffee
+{
+    background-color: antiquewhite;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgb(229, 193, 157);
+    transition: 0.5s;
+}
+
+.coffee:hover
+{
+  transform:translateY(20px);
+}
+.coffee h3 
+{
+   font-size: 22px;
+}
+.coffee h4
+{
+    font-size: 15px;
+    color: #8a5731;
+    margin-bottom: 20px;
+}
+.coffee img
+{
+    object-fit: cover;
+   width:100% ;
+   border-radius: 5px;
+
+}
+
+/*featured menu 
+in this section first we have a group of buttons
+there is 5 buttons without link so 
+ the button div class is buttons
+ and then we have our menu div it is the main menu of menu-card div 
+ so inside the menu-card is a img 
+ h3, h4 and a button
+ so there are 5 menu-card div*/
+
+ .featured-menu
+{
+  
+  text-align: center;
+  margin-top: 100px;
+}
+
+ .featured-menu h2
+ {
+    font-size: 50px;
+    margin-bottom: 24px;
+ }
+
+.buttons button
+{
+    background-color: antiquewhite;
+    padding: 13px 36px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 12px;
+
+}
+
+.buttons button:hover
+{
+    background-color: #a66a3f;
+    color:antiquewhite;
+}
+.menus
+{
+    margin: 0 auto;
+    width:70%;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    margin-top: 40px;
+    gap: 2px;
+    column-gap: 50px;
+    row-gap: 40px;  
+
+}
+.menu-card
+{
+     background:  antiquewhite;
+     border-radius: 10px;
+     box-shadow: 3px 3px 17px rgb(238, 206, 174);
+     transition:0.5s ;
+    
+}
+.menu-card:hover
+{
+    transform: translateY(12px);
+}
+
+.menu-card img
+{
+   width:100%;
+   object-fit: cover;
+    border-radius: 5px;
+}
+.menu-card button
+{
+    background-color:  #a66a3f;
+    padding: 8px 18px;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 12px;
+
+}
+.menu-card button:hover
+{
+    background-color: #d4a373;
+    color:antiquewhite;
+}
+
+/*customer section
+here is a div class (review) inside this section
+so we have 3 review div 
+inside each p, h3 and img */
+
+.customer
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(253, 243, 229);
+    padding: 70px;
+   
+    
+}
+.review
+{
+   background-color: #FFF8F0;
+   width:70%;
+   height: 27vh;
+   border-radius:0  100px 20px;
+    margin-left: 100px;
+    box-shadow: 3px 3px 17px rgb(238, 206, 174);
+    opacity: 1;
+}
+
+.review:hover
+{
+    background-color: #fffdfb;;
+}
+.review img
+{
+    
+    width: 16%;
+    justify-content:center;
+    border-radius: 50%;
+    margin-left: 200px;
+    
+}
+.review h3
+{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    margin-right: 100px;
+}
+.review p
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: start;
+    padding: 0 20px;
+}
+
+/*newsletter 
+inside this section here is a div class (news-text)
+so inside the news-text here is a h2, p and two input 
+and done */ 
+
+.newsletter
+{
+   margin-top: 100px;
+   background-image: url(22img/bgg1.png);
+   background-repeat: no-repeat;
+   margin-bottom: -10px;
+
+   width: 100%;
+   height: 15vh;
+   color: white;
+   padding: 170px;
+}
+
+.news-text h2 
+{
+    color: white;
+}
+input[type="email"] 
+{
+    background-color:white ;
+    padding: 10px 60px;
+    border:none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+input[type="submit form"]
+{
+  background-color:white ;
+    padding: 10px 10px;
+    border:none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+input:hover
+{
+    background-color: #a66a3f;
+    
+}
+input::placeholder
+{
+  text-align: start;
+}
+
+
+/*Footerrrrr
+ohhhhh finallyyy
+*/
+
+footer
+{
+   background-color: #1f120c;
+   color: white;
+    line-height: 3vh;
+
+   
+  
+}
+footer h5
+{
+    text-align: center;
+    font-size: 15px;
+  
+}
+.footers
+{
+    display: flex;
+    gap: 80px;
+    background-color: #1f120c;
+    color: white;
+    padding-top: 50px;
+    
+}
+.one-footer
+{
+   margin-left: 80px ;
+}
+
+.f-logo
+{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.f-logo img
+{
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+}
+.f-logo h3
+{
+    font-size: 15px;
+   
+
+}
+
+/* footer second 
+links*/
+
+.links
+{
+    color: white;
+     padding: 12px;
+}
+.ul-footer a
+{
+    color: white;
+    
+    font-size: 15px;
+   
+}
+.ul-footer
+{
+   list-style: none;
+
+}
+
+.ul-footer a:hover
+{
+    background-color: antiquewhite;
+    color: black;
+   
+
+}
+
+/*opening-h */
+.opening-h
+{
+    font-size: 15px;
+    padding: 12px;
+    margin-right: 80px;
+}
+.f-icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.f-icon a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6F4E37;
+    color: #6F4E37;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.f-icon a:hover{
+    background: #6F4E37;
+    color: white;
+    transform: translateY(-5px);
+}
+/* About Page
+hero-about section
+*/
+.hero-about
+{
+   background-image:  radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url(22img/n1.jpg); 
+   background-position:top ;
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 100%;
+   height: 50vh;
+   padding-top: 250px; 
+  
+ 
+}
+.hero-about h1
+{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* */
+
+.our-story
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 80px;
+    margin-top: 40px;
+
+}
+
+.story-text
+{
+    line-height: 3vh;
+}
+.story-text h3
+{
+    font-size: 54px;
+    margin-bottom: 26px;
+    margin-top: 20px;
+}
+.story-text p
+{
+    font-size: 27px;
+    line-height: 5vh;
+}
+.story-text button
+{
+    background-color:  #a66a3f;
+    padding: 12px 27px;
+    border: none;
+    font-size: 19px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+.story-text button:hover
+{
+    background-color: #d4a373;
+    color:antiquewhite;
+}
+
+
+
+.our-story img
+{
+  width: 36%;
+  border-radius: 8px;
+   
+}
+
+/*about-goal  background-color: #fffdfb;;
+ */
+
+.about-goal
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+   background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(22img/b.jpg);
+   background-repeat:no-repeat;
+   width: 100%;
+   height: 40vh;
+   color: white;
+   background-attachment:scroll;
+    
+}
+.about-goal p
+{
+    font-size:20px ;
+    margin-top: 10px;
+}
+.about-goal h3
+{
+    font-size: 30px;
+}
+
+/*contact page */
+.contact-hero
+{
+   background-image:  radial-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(22img/been.jpg); 
+   background-position:bottom;
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 100%;
+   height: 50vh;
+   padding-top: 250px; 
+   color: white;
+   text-align: center;
+   font-size:50px ; 
+}
+.contact
+{
+    padding: 200px;
+    display: flex;
+    gap: 50px;
+}
+
+.form
+{
+   margin-left: 140px;
+   background-color: #f9e1cece ;
+   border-radius: 10px;
+   padding: 50px;
+}
+input[type="text"],textarea,input[type="email"]
+{
+    background-color: #f9eee6;
+    border: 2px solid #ccad94;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.text-form input,button
+{
+   padding: 12px 44px;
+   color: rgb(86, 82, 82);
+
+}
+::placeholder
+{
+    text-align: start;
+    font-size: 16px;
+}
+.sub input
+{
+   padding: 12px 200px; 
+   
+}
+.form button
+{
+   padding: 12px 240px;  
+   background-color: #88462a;
+   border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    color: #FFF8F0;
+
+}
+.form button:hover
+{
+  background-color: #f9eee6;
+  color: #a09895;
+}
+/* */
+.information
+{
+    font-size: 26px;
+    line-height: 6vh;
+}
+
+.map {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*menu page
+section menu-hero 
+inside a h1  */
+.menu-hero
+{
+   background-image:  radial-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.8)),url(22img/6.jpg); 
+   background-position:bottom;
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 100%;
+   height: 50vh;
+   padding-top: 250px; 
+   color: white;
+   text-align: center;
+   font-size:50px ;
+}
+.blank
+{
+    background-color:  #FFF8F0;
+    width: 100%;
+    padding: 100px;
+}
+
+/*location-hero */
+
+.location-hero
+{
+  background-image:  radial-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(22img/4.jpg); 
+   background-position:auto;
+   background-repeat: no-repeat;
+   background-size:cover;
+   width: 100%;
+   height: 50vh;
+   padding-top: 250px; 
+   color: white;
+   text-align: center;
+   font-size:50px ;
+
+}
+.locations
+{
+    margin: 0 auto;
+    width:80%;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    margin-top: 40px;
+    gap: 2px;
+    column-gap: 50px;
+    row-gap: 40px; 
+    margin-top: 80px; 
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+.location-cards
+{
+     background:  antiquewhite;
+     border-radius: 10px;
+     box-shadow: 3px 3px 17px rgb(238, 206, 174);
+     transition:0.5s ;
+    
+}
+.location-cards:hover
+{
+    transform: translateY(12px);
+}
+
+.location-cards img
+{
+   width:100%;
+   object-fit: cover;
+    border-radius: 5px;
+}
+ 
+    
